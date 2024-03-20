@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even Handler</title>
+    <link rel="stylesheet" href="./css/stylejqueri.css" />
+  </head>
+  <body>
+    <h2>Letakkan kursor kemasing masing kotak</h2>
+    <div id="div1">Kuda</div>
+    <p>Berdamai dengan badai!</p>
+    <audio id="sound1" src="./sound/sound kuda.mp3"></audio>
+
+    <div id="div2">Singa</div>
+    <p>Pemimpi itu pemimpin</p>
+    <audio id="sound2" src="./sound/siinga.mp3"></audio>
+
+    <div id="div3">Kambing</div>
+    <p>Berkorban untuk menang</p>
+    <audio id="sound3" src="./sound/kambing.mp3"></audio>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $("document").ready(function () {
+        $("#div1").mouseover(function () {
+          $("#sound1")[0].play();
+          $(this).css({
+            background:
+              "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUmeQP9MCu0DpyvGjREFjdOpJ0lDH8ZaVJFg&usqp=CAU')",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+          });
+        });
+        $("div").mouseout(function () {
+          $("audio").each(function () {
+            this.pause(); // Menghentikan audio
+            this.currentTime = 0; // Mengatur waktu kembali ke awal
+          });
+          $(this).css({
+            background: "aqua",
+          });
+        });
+        $("#div2").mouseover(function () {
+          $("#sound2")[0].play();
+          $(this).css({
+            background:
+              "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSENECLmV6FUjxRBEDzYvVKBeE7g6chVK76Vg&usqp=CAU')",
+            "background-repeat": "no-repeat",
+            "background-size": "cover",
+          });
+        });
+        $("div").mouseout(function () {
+          $("audio").each(function () {
+            this.pause(); // Menghentikan audio
+            this.currentTime = 0; // Mengatur waktu kembali ke awal
+          });
+          $(this).css({
+            background: "aqua",
+          });
+        });
+        $("#div3").mouseover(function () {
+          $("#sound3")[0].play();
+          $(this).css({
+            background:
+              "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEVX-1CMNzxO3wb_ZhFv5yeoVpsiPCeSDyg&usqp=CAU')",
+            "background-repeat": "no-repeat",
+            "background-size": "cover",
+          });
+        });
+        $("div").mouseout(function () {
+          $("audio").each(function () {
+            this.pause(); // Menghentikan audio
+            this.currentTime = 0; // Mengatur waktu kembali ke awal
+          });
+          $(this).css({
+            background: "aqua",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

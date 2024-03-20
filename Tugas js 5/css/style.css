@@ -1,0 +1,73 @@
+/* contoh selektor tag di eksternal */
+p{
+    color: crimson;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+body{
+    /* background-color: rgb(2, 255, 188); */
+    background-image: url("../img/bcgrnd08.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+fieldset, legend{
+    background-color: rgb(14, 144, 167);
+    border-width: 1px;
+    border-color: blueviolet;
+    border-radius: 30px;
+}
+legend{
+    padding: 10px;
+    background-color: rgb(0, 80, 100);
+    color: rgb(0, 224, 93);
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+table {
+    background-color: aqua;
+    border: 10px;
+    margin: auto;
+
+}
+
+tr{
+    padding: 5px;
+    border: 1px solid green;
+}
+tr:hover{
+    background-color: rgb(27, 170, 160);
+    color: coral;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+/* contoh selektor id */
+#paragraph {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    color: rgb(75, 0, 224);
+}
+a.item:link, a.item:visited, a.item:active{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    float: left;
+    padding: 2px 3px;
+    background-color: rgb(3, 216, 205);
+
+}
+h1{
+    color: rgb(141, 242, 18);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both; /* memperbaiki penjajaran elemen */
+}
