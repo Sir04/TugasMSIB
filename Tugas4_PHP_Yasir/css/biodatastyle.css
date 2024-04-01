@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px auto;
+    padding: 0;
+    background-color: #ddff02;
+    background-image: url('../img/rain.jpeg');
+    background-size: cover;
+    background-position: center; 
+
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(247, 247, 247);
+}
+h1 {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.info {
+    margin-bottom: 20px;
+    color:hwb(0 100% 0%);
+}
+.info label {
+    font-weight: bold;
+}
+.fotoDiri {
+    width: 20%; /* Ukuran 1/4 dari lebar container */
+    float: right; /* Mengatur gambar ke sisi kanan */
+    margin-left: 100px; /* Spasi antara teks dan gambar */
+/* Jika Anda ingin gambar tetap dalam batasan .info */
+max-height: 120px; /* Ukuran maksimum gambar */
+}
+.gambar-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* membuat kolom grid dinamis */
+    grid-gap: 10px;
+    /* memberikan jarak antara gambar */
+}
+
+.gambar {
+    width: 100%;
+    /* agar gambar mengisi seluruh lebar kolom */
+    height: auto;
+    /* agar gambar mengikuti proporsi aslinya */
+}
